@@ -1,0 +1,6 @@
+
+
+costum_grey_map:
+'Model': {'in_channels': 1, 'out_channels': 1, 'model_channels': 128, 'attention_resolutions': [16, 8, 4, 2], 'num_res_blocks': 3, 'dropout': 0.2, 'channel_mult': [1, 2, 2, 2], 'conv_resample': True, 'num_heads': 2}, 'Dataset': {'dataset': 'custom', 'train': True, 'data_path': './data/crack_grey/map', 'download': True, 'image_size': [128, 128], 'mode': 'L', 'suffix': ['png', 'jpg'], 'batch_size': 4, 'shuffle': True, 'drop_last': True, 'pin_memory': True, 'num_workers': 2}, 'Trainer': {'T': 1000, 'beta': [0.0001, 0.02]}, 'Callback': {'filepath': './checkpoint/costum_grey_map.pth', 'save_freq': 1}, 'device': 'cuda', 'epochs': 1000, 'consume': False, 'consume_path': './checkpoint/costum_grey_map.pth', 'lr': 0.0002}
+
+
